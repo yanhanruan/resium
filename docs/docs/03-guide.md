@@ -10,7 +10,7 @@ title: Guide
 Resium brings React's component lifecycle to Cesium. The relationship between Cesium elements and React's lifecycle is as follows:
 
 1. Render: Nothing is rendered, as a cesium element is not initialized yet.
-2. Initalize Cesium element: An Cesium element is initialized, and it is added to its parent if the parent exists.
+2. Initialize Cesium element: An Cesium element is initialized, and it is added to its parent if the parent exists.
 3. Re-render: After Cesium element's initalization, children of the component are rendered. DOM never be rendered except root components (Viewer and CesiumWidget).
 4. Update: Changed properties of the Cesium element are updated. If "Cesium read-only properties" are changed, the Cesium element will be reinitialized.
 5. Unmount: The Cesium element is destroyed.
